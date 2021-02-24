@@ -43,7 +43,7 @@ for dataset_id in range(0, len(dataset_name)):
 	bottom_edge=edge_y1[dataset_id]
 	top_edge=edge_y2[dataset_id]
 
-	print(('Dataset name:', filename))
+	print('Dataset name:', filename)
 
 
 	##############################################
@@ -74,7 +74,7 @@ for dataset_id in range(0, len(dataset_name)):
 	num_members=len(x_dataset)
 
 
-	print(('Size of dataset: ', num_members))
+	print('Size of dataset: ', num_members)
 
 	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	#define control field boundaries and properties
@@ -82,13 +82,13 @@ for dataset_id in range(0, len(dataset_name)):
 
 	#Square/Retangular area of dataset region
 	area_dat=area_dataset[dataset_id]
-	print(('Area: ', area_dataset))
+	print('Area: ', area_dataset)
 
 
 
 	#define square density of control field
 	density=area_dat/num_members
-	print(('density', density))
+	print('density', density)
 
 
 	#square unit area width/height
@@ -104,8 +104,8 @@ for dataset_id in range(0, len(dataset_name)):
 
 
 	#check density of control region is the same as dataset region
-	print(('[pre-expansion] Density (dataset region,control region)', density,length_den_width*length_den_height))
-	print(('[pre-expansion] Area (dataset region,control region)', area_dat,length_den_width*length_den_height*num_members))
+	print('[pre-expansion] Density (dataset region,control region)', density,length_den_width*length_den_height)
+	print('[pre-expansion] Area (dataset region,control region)', area_dat,length_den_width*length_den_height*num_members)
 
 	#additional checks
 	#print 'length_den_width', length_den_width
@@ -162,7 +162,7 @@ for dataset_id in range(0, len(dataset_name)):
 	file_control.close()
 
 	##total number of dataset & control field points
-	print(('total, len(control_x/dec)',num_members, len(control_x), len(control_y)))
+	print('total, len(control_x/dec)',num_members, len(control_x), len(control_y))
 
 
 	#~~Additional Checks~~#
