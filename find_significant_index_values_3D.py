@@ -32,7 +32,7 @@ for dataset_id in range(0, len(dataset_name)):
 	#dataset name 	
 	filename=dataset_name[dataset_id] 
 	
-	print 'Dataset', filename 	
+	print('Dataset', filename) 	
 
 	############################################## 	
 	#  Open dataset index file	# 	
@@ -78,7 +78,7 @@ for dataset_id in range(0, len(dataset_name)):
 		file_random.close()
 		
 	#check
-	print 'size of dataset and random', len(indexvals_dat), len(indexvals_ran)
+	print('size of dataset and random', len(indexvals_dat), len(indexvals_ran))
     
 	############################################## 	
 	#  	Significance threshold	# 	
@@ -93,7 +93,7 @@ for dataset_id in range(0, len(dataset_name)):
 
 	sig_threshold=mean_Iran+(3.*std_Iran)
 
-	print 'significance threshold:', sig_threshold
+	print('significance threshold:', sig_threshold)
 
 
 	############################################## 	
@@ -129,7 +129,7 @@ for dataset_id in range(0, len(dataset_name)):
 			y_Nclustered.append(y_i)
 			z_Nclustered.append(z_i)
 
-	print 'number of signficantly clustered points:', len(x_clustered), '/', len(x_dat)
+	print('number of signficantly clustered points:', len(x_clustered), '/', len(x_dat))
 
 
 	fig=plt.figure()

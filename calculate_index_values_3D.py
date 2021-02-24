@@ -37,7 +37,7 @@ for dataset_id in range(0, len(dataset_name)):
 	filename=dataset_name[dataset_id]
 
 
-	print 'Dataset:', filename
+	print('Dataset:', filename)
 
 	##############################################
 	#  Open dataset Positions File	#
@@ -129,7 +129,7 @@ for dataset_id in range(0, len(dataset_name)):
 
 	elapsed_time = time.time() - start_time
 
-	print 'file: ', filename,'Time taken: ', elapsed_time
+	print('file: ', filename,'Time taken: ', elapsed_time)
 
 	file_index.close()
 

@@ -36,7 +36,7 @@ for dataset_id in range(0, len(dataset_name)):
 	#dataset name
 	filename=dataset_name[dataset_id]
 
-	print 'Dataset:', filename
+	print('Dataset:', filename)
 
 	##############################################
 	#  Open control field file	#
@@ -65,7 +65,7 @@ for dataset_id in range(0, len(dataset_name)):
 		#open dataset and control field files
 		file_dataset=open('./dataset_%s'%filename+'_random_%d'%ran_num+'.csv', 'r')
 
-		print 'Opening...', file_dataset
+		print('Opening...', file_dataset)
 
 		#some empty arrays
 		xy_dataset=[]
@@ -134,7 +134,7 @@ for dataset_id in range(0, len(dataset_name)):
 
 		elapsed_time = time.time() - start_time
 
-		print 'file: ', filename,'Time taken: ', elapsed_time
+		print('file: ', filename,'Time taken: ', elapsed_time)
 
 		file_index.close()
 
