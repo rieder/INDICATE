@@ -53,7 +53,7 @@ for dataset_id in range(0, len(dataset_name)):
 	zmax_edge=edge_z2[dataset_id]
 	volume_dat=volume_dataset[dataset_id]
 
-	print('Dataset name:', filename)
+	print(('Dataset name:', filename))
 
 	############################################## 	
 	# 	Read in dataset  # 	
@@ -82,11 +82,11 @@ for dataset_id in range(0, len(dataset_name)):
 
 	#size of dataset 	
 	num_members=len(x_dataset) 	
-	print('Size of dataset: ', num_members) 	
+	print(('Size of dataset: ', num_members)) 	
 	
 	#density of dataset
 	density=volume_dat/num_members 	
-	print('density', density)
+	print(('density', density))
 
 
 	#cube unit volume width/height/depth
@@ -100,8 +100,8 @@ for dataset_id in range(0, len(dataset_name)):
 	depth=abs(zmax_edge-zmin_edge)
 
 	#check density of control region is the same as dataset region
-	print('[pre-expansion] Density (dataset region,control region)', density,length_den_width*length_den_height*length_den_depth)
-	print('[pre-expansion] Volume (dataset region,control region)', volume_dat,length_den_width*length_den_height*length_den_depth*num_members)
+	print(('[pre-expansion] Density (dataset region,control region)', density,length_den_width*length_den_height*length_den_depth))
+	print(('[pre-expansion] Volume (dataset region,control region)', volume_dat,length_den_width*length_den_height*length_den_depth*num_members))
 
 	#additional checks
 	#print 'length_den_width', length_den_width
@@ -169,7 +169,7 @@ for dataset_id in range(0, len(dataset_name)):
 	file_control.close()
 
 	##total number of dataset & control field points
-	print('total, len(control_x/dec)',num_members, len(control_x), len(control_y))
+	print(('total, len(control_x/dec)',num_members, len(control_x), len(control_y)))
 
 
 	#~~Additional Checks~~#
